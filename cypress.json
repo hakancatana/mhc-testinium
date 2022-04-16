@@ -1,0 +1,16 @@
+{
+  "baseUrl": "https://www.gittigidiyor.com",
+  "integrationFolder": "tests",
+  "video": false,
+  "env": {
+    "restApiUrl": "https://api.trello.com/1"
+  },
+  "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "reportDir": "reports",
+    "charts": true,
+    "reportPageTitle": "XSS API Test Suite",
+    "embeddedScreenshots": true,
+    "inlineAssets": true
+  }
+}

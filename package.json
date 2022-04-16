@@ -1,0 +1,22 @@
+{
+  "name": "testiniumCaseStudy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run-all": "cypress run --browser chrome --spec tests/**/ *.spec",
+    "cy:run-api": "cypress run --browser chrome --spec tests/api/addingUpdatingDeletingCards.spec.js",
+    "cy:run-e2e": "cypress run --browser chrome --spec tests/e2e/addingProductToBasket.spec.js"
+  },
+  "keywords": [],
+  "author": "Mustafa Hakan Çatana",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.1",
+    "cypress-mochawesome-reporter": "^3.0.0"
+  },
+  "dependencies": {
+    "prettier": "^2.5.1"
+  }
+}
