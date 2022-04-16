@@ -36,7 +36,7 @@ describe("E2E GittiGidiyor Spec", () => {
           .slice(0, 3)
           .join(" ")
           .toUpperCase();
-        cy.readFile("tests/e2e/productDetail.txt")
+        cy.readFile("productDetail.txt")
           .should("exist")
           .and("contains", productTitle);
       });
@@ -44,7 +44,7 @@ describe("E2E GittiGidiyor Spec", () => {
       // Asserting product price from the same text file
       cy.get(basketPage.fields.productElm.basketTotalPrice).then(($el) => {
         const productPrice = $el.text().valueOf();
-        cy.readFile("tests/e2e/productDetail.txt")
+        cy.readFile("productDetail.txt")
           .should("exist")
           .and("contains", productPrice);
       });
