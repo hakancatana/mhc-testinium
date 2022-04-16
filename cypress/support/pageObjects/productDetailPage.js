@@ -32,7 +32,7 @@ class ProductDetailPage {
       let priceText = doc
         .querySelector(this.fields.productPrice)
         .innerHTML.trim();
-      cy.writeFile("tests/e2e/productDetail.txt", titleText + "\n" + priceText);
+      cy.writeFile("productDetail.txt", titleText + "\n" + priceText);
     });
   }
 }
